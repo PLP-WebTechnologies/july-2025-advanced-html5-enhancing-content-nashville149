@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content and Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Content and Form Showcase</h1>
+    </header>
+
+    <main>
+        <section id="content-section">
+            <h2>Content Section</h2>
+
+            <h3>Key Web Technologies</h3>
+            <ul>
+                <li>HTML5 - The structure of the web.</li>
+                <li>CSS3 - Styling and layout.</li>
+                <li>JavaScript - Interactivity and dynamic content.</li>
+            </ul>
+
+            <h3>Available Courses</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Advanced Web Development</td>
+                        <td>12 Weeks</td>
+                    </tr>
+                    <tr>
+                        <td>Data Science Fundamentals</td>
+                        <td>16 Weeks</td>
+                    </tr>
+                     <tr>
+                        <td>UI/UX Design Principles</td>
+                        <td>8 Weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Embedded Media</h3>
+            <figure>
+                <img src="https://via.placeholder.com/600x300.png?text=Sample+Image" alt="A placeholder image">
+                <figcaption>This is a sample placeholder image.</figcaption>
+            </figure>
+        </section>
+
+        <section id="form-section">
+            <h2>Full HTML5 Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" placeholder="e.g., Jane Doe" required minlength="3" autocomplete="name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="Minimum 8 characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Registration</legend>
+
+                    <label for="birth-date">Date of Birth:</label>
+                    <input type="date" id="birth-date" name="birth_date" required>
+
+                    <label for="course-selection">Choose a Course:</label>
+                    <select id="course-selection" name="course" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="web-dev">Advanced Web Development</option>
+                        <option value="data-sci">Data Science Fundamentals</option>
+                        <option value="ui-ux">UI/UX Design Principles</option>
+                    </select>
+
+                    <label for="reg-code">Registration Code:</label>
+                    <input type="text" id="reg-code" name="reg_code" value="NASHVILLE-149" readonly>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agreement</legend>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the terms and conditions.
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Advanced HTML5 Course</p>
+    </footer>
+
+</body>
+</html>
